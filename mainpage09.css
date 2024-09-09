@@ -1,0 +1,374 @@
+
+.body{
+    background-color: #eedbdb;
+    
+}
+
+
+nav{
+    background-color: #dab0b0 ;
+    padding: 10px 0;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    display: block;
+    transition: color 0,3s;
+}
+
+nav ul li a:hover{
+    color: rgb(100, 53, 81);
+}
+
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c89f9f ;
+    box-shadow: 0px 8px 16px 0 px rgba(0,0,0,0,2);
+    z-index: 1;
+    min-width: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li{
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a{
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover{
+    background-color: #f6d1d1;
+}
+
+nav ul li:hover .dropdown-content{
+    display: block;
+}
+
+
+
+.input-container {
+    width: 220px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    
+  }
+  
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: calc(50% + 5px);
+    transform: translateY(calc(-50% - 5px));
+  }
+  
+  .input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    transition: .2s linear;
+    border: 2.5px solid rgb(100, 53, 81);;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .input:focus {
+    outline: none;
+    border: 0.5px solid black;
+    box-shadow: -5px -5px 0px rgb(100, 53, 81);;
+  }
+  
+  .input-container:hover > .icon {
+    animation: anim 1s linear infinite;
+  }
+  
+  @keyframes anim {
+    0%,
+    100% {
+      transform: translateY(calc(-50% - 5px)) scale(1);
+    }
+  
+    50% {
+      transform: translateY(calc(-50% - 5px)) scale(1.1);
+    }
+  }
+
+
+      
+button {
+  
+    position: flex; 
+    top: 15px; 
+    gap: 10px;
+    display: flex;
+    
+    
+    padding: 20px 25px 20px 22px;
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #e8e8e8;
+    border-color: #ffe2e2;
+    border-style: solid;
+    border-width: 9px;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    color: rgb(218, 86, 123);
+    font-family: monospace;
+    transition: transform 400ms cubic-bezier(0.68, -0.55, 0.27, 2.5),
+      border-color 400ms ease-in-out, background-color 400ms ease-in-out;
+    word-spacing: -2px;
+  }
+  
+  @keyframes movingBorders {
+    0% {
+      border-color: #fce4e4;
+    }
+  
+    50% {
+      border-color: #ffd8d8;
+    }
+  
+    90% {
+      border-color: #fce4e4;
+    }
+  }
+  
+  button:hover {
+    background-color: #eee;
+    transform: scale(105%);
+    animation: movingBorders 3s infinite;
+  }
+  
+  button svg {
+    margin-right: 11px;
+    fill: rgb(218, 86, 123);
+    transition: opacity 100ms ease-in-out;
+  }
+  
+  .filled {
+    position: absolute;
+    opacity: 0;
+    top: 20px;
+    left: 22px;
+  }
+  
+  @keyframes beatingHeart {
+    0% {
+      transform: scale(1);
+    }
+  
+    15% {
+      transform: scale(1.15);
+    }
+  
+    30% {
+      transform: scale(1);
+    }
+  
+    45% {
+      transform: scale(1.15);
+    }
+  
+    60% {
+      transform: scale(1);
+    }
+  }
+  
+  button:hover .empty {
+    opacity: 0;
+  }
+  
+  button:hover .filled {
+    opacity: 1;
+    animation: beatingHeart 1.2s infinite;
+  }
+  
+
+  
+  .slider{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+.slides{
+    display: flex;
+    width: 100%;
+    animation: slideAnimation 10s infinite;
+}
+
+.slide{
+    width: 100%;
+    flex-shrink: 0;
+}
+
+@keyframes slideAnimation{
+    0% {transform: translateX(0);}
+    33% {transform: translateX(-100%);}
+    66% {transform: translateX(-200%);}
+    100% {transform: translateX(0);}
+}
+
+.slide img{
+    width: 100%; 
+    display: block;
+}
+
+
+.product-card{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+
+
+.container{
+  display: inline-flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  left: 20px;
+}
+
+.card1{
+
+background-color: #f4f4f4;
+border: 1px solid #ddd;
+border-radius: 8px;
+padding: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+flex: 1;
+max-width: 300px;
+}
+
+.card1 h2{
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.card1 p{
+  color: #666;
+}
+
+
+
+.button1 {
+  justify-content: center;
+  background-color: #f4f4f4;
+  color: rgb(100, 53, 81);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 200px;
+  height: 45px;
+  transition: 0.3s;
+}
+
+.button1:hover {
+  background-color: #c89f9f ;
+  box-shadow: 0 0 0 5px rgb(100, 53, 81);
+  color: #fff;
+}
+
+.categorias{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(100, 53, 81);;;
+}
+
+
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: #aa8888;
+}
+
+.footer-section{
+  flex-basis: 23%;
+  margin-bottom: 20px;
+}
+
+.footer-section h4{
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: steelblue;
+}
+
+.footer-section p, .footer-section ul{
+  margin: 0;
+  padding: 0;
+  line-height: 1,6;
+}
+
+.footer-section ul {
+  list-style-type: none;
+}
+
+.footer-section ul li{
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a{
+  color: #c89f9f ;
+  text-decoration: none;
+  transition: color 0,3s;
+}
+
+.footer-section ul li a:hover{
+  color:rgb(100, 53, 81);;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: rgb(100, 53, 81);;
+  text-decoration: none;
+  transition: color 0,3s;
+}
+
+.social-links a:hover{
+  color: #aa8888 ;
+}
+
+.footer-bottom{
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid#aa8888;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
