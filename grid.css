@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+.body{
+    font-family: Cambria, Georgia, Times, 'Times New Roman';
+    background-color:#eedbdb;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.gallery-item{
+  margin: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 200px;
+}
+
+.gallery-item img{
+   width: 100%;
+   height: auto;
+}
+
+.texto{
+    font-family: "Oswald", sans-serif;
+    color: rgb(100, 53, 81);
+    
+}
+
+.titulo{
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(100, 53, 81);
+}
