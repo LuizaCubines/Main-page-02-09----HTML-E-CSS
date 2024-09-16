@@ -322,7 +322,7 @@ max-width: 300px;
 .footer-section h4{
   margin-bottom: 15px;
   font-size: 18px;
-  color: steelblue;
+  color: rgb(100, 53, 81);
 }
 
 .footer-section p, .footer-section ul{
@@ -372,3 +372,113 @@ max-width: 300px;
 .footer-bottom p {
   margin: 0;
 }
+
+.brutalist-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 169px;
+  height: 60px;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(218, 86, 123);
+  border: 3px solid #ffe2e2;
+  outline: 3px solid #ffe2e2;
+  box-shadow: 6px 6px 0 rgb(100, 53, 81);
+  transition: all 0.1s ease-out;
+  padding: 0 15px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.brutalist-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+  z-index: 1;
+  transition: none;
+  
+}
+
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.brutalist-button:hover::before {
+  /* Show the pseudo-element on hover */
+  opacity: 1;
+  animation: slide 2s infinite;
+}
+
+.brutalist-button:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 rgb(218, 86, 123);;
+  background-color: #fff;
+  color: rgb(218, 86, 123);
+  border-color: rgb(218, 86, 123);
+}
+
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.brutalist-button:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0 rgb(100, 53, 81);
+  background-color: #fff;
+  color: #ffe2e2;
+  border-color: #ffe2e2;
+}
+
+.button-text {
+  color: rgb(218, 86, 123);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+}
+
+.brutalist-button:hover .button-text {
+  transform: skew(-5deg);
+}
+
+.brutalist-button:active .button-text {
+  transform: skew(5deg);
+}
+
+.button-text span:first-child {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.button-text span:last-child {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.text{
+  color: rgb(218, 86, 123);
+ }
