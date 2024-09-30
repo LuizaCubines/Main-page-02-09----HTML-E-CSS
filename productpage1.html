@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Produto</title>
+    <link rel="stylesheet" href="productpage1.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home"><img src="makeupicon.png" alt="" width="25%"></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li class="dropdown">
+                <a href="#mais" class="dropbtn">Mais</a>
+                <ul class="dropdown-content">
+                    <li><a href="#Promoções">Promoções</a></li>
+                    <li><a href="Fotosflexbox.html">Lançamento</a></li>
+                    <li><a href="#Acessórios">Acessórios</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#marcas" class="dropbtn">Marcas</a>
+                <ul class="dropdown-content">
+                    <li><a href="#Novidade">Novidade</a></li>
+                    <li><a href="#Populares">Populares</a></li>
+                    <li><a href="#Cruelty-free">Cruelty-free</a></li>
+                </ul>
+            </li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+            <li><button class="brutalist-button">
+              <div class="button-text">
+              <a href="login.html" class="text">Login</a></div></button></li>
+        </ul>
+        <nav class="navsecundaria">
+          <p></p>
+      </nav>
+      </nav>
+  
+    <header>
+        <h1>Makeup Shop</h1>
+    </header>
+
+    <main>
+        <section class="produto">
+            <div class="imagens-produto">
+            
+                <img src="lançamento2.jpeg" alt="Produto principal" class="imagem-principal" id="imagem-principal">
+                
+                <div class="miniaturas">
+                    <img src="prod1.webp" alt="Miniatura 1" class="miniatura" data-imagem="prod1.webp">
+                    <img src="prod2.webp" alt="Miniatura 2" class="miniatura" data-imagem="prod2.webp">
+                    <img src="prod4.jfif" alt="Miniatura 3" class="miniatura" data-imagem="prod4.jfif">
+                </div>
+            </div>
+
+
+
+            <div class="detalhes-produto">
+                <h2>Lip Oil Kiss Kiss Bee, Guerlain</h2>
+                <br>
+                  <p class="descricao"> Guerlain apresenta KissKiss Bee Glow Oil , um óleo labial colorido com infusão de mel, formulado com 92% de ingredientes de origem natural. Disponível em seis tonalidades, realça a cor natural dos lábios com um toque de brilho 3D irresistível, proporcionando 24 horas de cuidado.
+                 
+                    Ultra sensorial, a textura de revestimento fundente para os lábios oferece uma sensação envolvente e garante um efeito de volume instantâneo e um brilho vítreo completamente viciante, sem pegajosidade.
+                    
+                    O KissKiss Bee Glow Oil vem em 6 tons que combinam perfeitamente com os tons do Balm KissKiss Bee Glow.</p>
+                <p class="preco">R$ 230,00 </p>
+
+                <form class="opcoes-compra">
+                    <label for="Quantidade">Quantidade</label>
+                    <input type="number" id="quantidade" >
+                    <br>
+                    <br>
+                    <label for="cor">Cor:</label>
+                    <select id="cor">
+                        <option>258 Rose</option>
+                        <option>309 Honey</option>
+                        <option>319 Peach</option>
+                        <option>458 Rose Pop</option>
+                        <option>775 Poppy</option>
+                        <option>809 Lavender</option>
+                    </select>
+
+                    <button type="submit">Comprar</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="comentario">
+           <img src="pedro.jfif" alt="usuário" class="foto-usuario">
+             <p><strong>Pedro: </strong>Amei o produto, cor maravilhosa!</p>
+        </div>
+
+        <div class="comentario">
+            <img src="marta.jfif" alt="usuário" class="foto-usuario">
+              <p><strong>Marta: </strong> Gloss ótimo, entrega rápida!</p>
+        </div>
+   </main>
+
+   <footer>
+    <p>&copy;2024 Makeup Shop</p>
+   </footer>
+     <script src="script.js"></script>
+
+</body>
+</html>

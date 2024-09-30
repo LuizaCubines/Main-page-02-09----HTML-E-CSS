@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Produto</title>
+    <link rel="stylesheet" href="productpage.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home"><img src="makeupicon.png" alt="" width="25%"></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li class="dropdown">
+                <a href="#mais" class="dropbtn">Mais</a>
+                <ul class="dropdown-content">
+                    <li><a href="#Promoções">Promoções</a></li>
+                    <li><a href="Fotosflexbox.html">Lançamento</a></li>
+                    <li><a href="#Acessórios">Acessórios</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#marcas" class="dropbtn">Marcas</a>
+                <ul class="dropdown-content">
+                    <li><a href="#Novidade">Novidade</a></li>
+                    <li><a href="#Populares">Populares</a></li>
+                    <li><a href="#Cruelty-free">Cruelty-free</a></li>
+                </ul>
+            </li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+            <li><button class="brutalist-button">
+              <div class="button-text">
+              <a href="login.html" class="text">Login</a></div></button></li>
+        </ul>
+        <nav class="navsecundaria">
+          <p></p>
+      </nav>
+      </nav>
+  
+    <header>
+        <h1>Makeup Shop</h1>
+    </header>
+
+    <main>
+        <section class="produto">
+            <div class="imagens-produtos">
+                <img src="lançamento 1.jpeg" alt="produto principal" class="imagem-principal" id="imagem-principal">
+            
+            <div class="miniaturas">
+              <img src="produto1.jfif" alt="miniatura1" class="miniatura" data-imagem="produto1.jfif">
+              <img src="produto2.jfif" alt="miniatura2" class="miniatura" data-imagem="produto2.jfif">
+              <img src="produto3.jfif" alt="miniatura3" class="miniatura" data-imagem="produto3.jfif">
+            </div>
+            </div>
+
+            <div class="detalhes-produto">
+                <h2>Cleanance Aqua-Gel, Avéne</h2>
+                <br>
+                  <p class="descricao"> Um hidratante preenchedor com ação antioxidante e textura gel ultraleve, refrescante e de rápida absorção.</p>
+                <p class="preco">R$ 200,00 </p>
+
+                <form class="opcoes-compra">
+                    <label for="Quantidade">Quantidade</label>
+                    <input type="number" id="quantidade" >
+                    <br>
+                    <br>
+
+                    <button type="submit">Comprar</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="comentario">
+           <img src="eduarda.jfif" alt="usuário" class="foto-usuario">
+             <p><strong>Eduarda: </strong>Ótimo produto, cumpre o prometido!</p>
+        </div>
+
+        <div class="comentario">
+            <img src="mariajulia.jfif" alt="usuário" class="foto-usuario">
+              <p><strong>Maria Júlia: </strong>Produto muito bom, recomendo!</p>
+        </div>
+   </main>
+
+   <footer>
+    <p>&copy;2024 Makeup Shop</p>
+   </footer>
+     <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,4 +1,5 @@
 
+
 .body{
     background-color: #eedbdb;
     
@@ -120,8 +121,6 @@ button {
     top: 15px; 
     gap: 10px;
     display: flex;
-    
-    
     padding: 20px 25px 20px 22px;
     box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-color: #e8e8e8;
@@ -130,6 +129,7 @@ button {
     border-width: 9px;
     border-radius: 25px;
     font-size: 20px;
+    text-decoration: none;
     cursor: pointer;
     font-weight: 900;
     color: rgb(218, 86, 123);
@@ -276,6 +276,7 @@ max-width: 300px;
 
 
 .button1 {
+  text-decoration: none;
   justify-content: center;
   background-color: #f4f4f4;
   color: rgb(100, 53, 81);
@@ -374,6 +375,7 @@ max-width: 300px;
 }
 
 .brutalist-button {
+ text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -481,4 +483,4 @@ max-width: 300px;
 
 .text{
   color: rgb(218, 86, 123);
- }
+}
